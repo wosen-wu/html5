@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="responsive.css" rel="stylesheet">
+    <style>
+        #box{
+            float: left;
+            width: 100%;
+        }
+        .right{
+            width:100%;
+            float: left;
+            background-color: #00ff00;
+            height: 300px;
+        }
+        .center{
+            width:100%;
+            float: left;
+            background-color: #00ffff;
+            height: 300px;
+        }
+        .left{
+            width:100%;
+            float: left;
+            background-color: #f00;
+            height: 300px;
+        }
+       /* @media screen and (min-width: 768px) {
+            .left,.center,.right
+            {width:100%;
+            }
+
+        }*/
+        @media screen and (min-width: 768px){
+            #box{
+                width:740px;
+            }
+            .left{
+                width: 30%;
+                color: #0d3349;
+            }
+            .center{
+            width: 40%;
+        }
+            .right{
+            width: 30%;
+            }
+        }
+        @media screen and (min-width: 992px) {
+            #box{
+                width: 940px;
+            }
+            .left{
+                width: 50%;
+                color: rebeccapurple;
+            }
+            .center{
+                width: 40%;
+            }
+            .right{
+                width: 10%;
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            #box{
+                width: 1170px;
+            }
+            .left{
+                width: 40%;
+                color: #990000;
+            }
+            .center{
+                width: 60%;
+            }
+            .right{
+                display: none;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="box">
+    <div class="left">我是left呀</div>
+    <div class="center">我是center呀</div>
+    <div class="right">我是right呀</div>
+</div>
+
+</body>
+</html>
